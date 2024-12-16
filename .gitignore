@@ -1,0 +1,46 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.vssscc
+*.vsscc
+
+# Build-Ordner
+bin/
+obj/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+*.dotnet/
+*.db
+*.db-journal
+
+# Verzeichnisse für Visual Studio 2019 und neuer
+.vscode/
+*.sln.ide
+.vscode/*
+
+# Einstellungen für Rider
+.idea/
+
+# NuGet-Pakete
+packages/
+*.nupkg
+
+# Node.js spezifisch (falls verwendet)
+node_modules/
+
+# Weitere temporäre Dateien
+*.log
+*.tmp
+*.temp
+
+# Geheime Informationen
+appsettings.Development.json
+appsettings.Production.json
+*.pfx
+*.publishsettings
+
+# Örtliche Benutzerdateien
+*.userprefs

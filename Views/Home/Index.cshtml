@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Weihnachts-Tannenbaum";
+}
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Weihnachts-Tannenbaum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pzwK0hJgE+QiEipiJqhiEuoRJ0QM0twZppEJgGsWvTJAsBJNm4LMB2L0zI+BckoGJUKefYaHhA1LvT3rRFgkIw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #0a3d0a;
+            color: #fff;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 50px;
+        }
+
+        .tree {
+            font-size: 100px;
+            margin-bottom: 30px;
+            color: #0f0;
+            animation: blink 1s infinite;
+        }
+
+        .btn-toggle {
+            background-color: #ff0000;
+            border: none;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-toggle:hover {
+            background-color: #cc0000;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        🎄
+    </div>
+
+    <h1>Weihnachts-Tannenbaum Steuerung</h1>
+
+    <form method="post" asp-action="Toggle">
+        <button type="submit" class="btn-toggle">
+            <i class="fas fa-power-off"></i> Umschalten
+        </button>
+    </form>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="message">
+            @TempData["Message"]
+        </div>
+    }
+</body>
+</html>
