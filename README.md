@@ -1,6 +1,6 @@
 # Weihnachts-Tannenbaum Steuerung
 
-Ein einfaches ASP.NET Core Webprojekt zur Steuerung einer Tasmota-Steckdose für deinen Weihnachtsbaum. Dies ermöglicht es dir, den Weihnachtsbaum mit einem Klick auf einen Button ein- und auszuschalten, indem REST-API-Calls an die Tasmota-Steckdose sendest werden.
+Ein einfaches ASP.NET Core Webprojekt zur Steuerung einer Tasmota-Steckdose für meinen Weihnachtsbaum. Dies ermöglicht es, den Weihnachtsbaum mit einem Klick auf einen Button ein- und auszuschalten, indem REST-API-Calls an die Tasmota-Steckdose gesendet werden.
 
 ## Funktionen
 
